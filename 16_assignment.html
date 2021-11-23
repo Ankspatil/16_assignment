@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+</head>
+<style>
+    body{
+      
+        background-image: url(books.jpg);
+    }
+    nav ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        white-space: nowrap;
+    }
+
+
+
+nav a{
+    margin: 20px;
+    text-align: left;
+    padding: 12px 20px 12px 20px;
+    background-color: #5f6975;
+    color: wheat;
+    text-decoration: none;
+    position: relative;
+    display: block;
+
+
+}
+nav .main>li{
+    display: inline-block;
+}
+
+nav li:hover>a{
+    cursor: pointer;
+    background-color: #2f95c2;
+}
+
+nav .submain,nav .super-submain{
+    position: absolute;
+    display: none;
+}
+nav .main>li:hover .submain,nav .submain>li:hover>.super-submain{
+display: block;
+}
+nav .super-submain
+{
+ top: 0;
+ right: 0;
+ transform: translate(100%,0);
+}
+  nav .submain li{
+      position: relative;
+      border-top: 1px solid #dcdddf;
+      border-bottom: 1px solid #e2e6eb;
+  }
+  nav .arrow{
+      display: inline-block;
+      border: 2px solid white;
+      width: 8px;
+      height: 8px;
+      border-left: none;
+      border-bottom: none;
+      position: relative;
+      right: 0;
+      margin-left: 10px;
+  }
+  nav .arrow.arrowDown
+  {
+transform: rotatez(335deg) translate(0px 3px);
+  }
+  input
+  {
+      margin-left: 30%;
+      margin-top: 28%;
+      height: 40px;
+      width: 40%;
+      border-radius: 10%;
+      border: 2px solid black;
+      font-size: 20px;
+      text-align: center;
+  }
+  button
+{
+    margin-left: 45%;
+      margin-top: 20px;
+      height: 40px;
+      width: 10%;
+      border-radius: 10%;
+      border: 2px solid black;
+      font-size: 20px;
+      text-align: center;
+}
+button:hover
+{
+    color: #2f95c2;
+    background-color: #000000 ;
+    cursor: pointer;
+}
+
+
+  
+
+
+</style>
+<body>
+<nav>
+    <ul class="main">
+       
+        <li id="home"><a href="Home.html"> Home </a></li>
+        <li id="services"><a href="Services.html">Services</a></li>
+        <li id="services"><a href="S.html"> Book Store</a></li>
+        <li id="services"><a href="pri.html">Primium <span class="arrow arrowDown"></span></a>
+        
+            <ul class="submain">
+       
+                <li id="stp"><a href="Home.html">Primium Books</a>
+                    <ul class="super-submain">
+       
+                        <li id="#"><a href="Home.html">Game of Throne</a></li>
+                        <li id="#"><a href="Services.html">Vikings</a></li>
+                        <li id="#"><a href="S.html">Rich Dad Poor Dad</a></li>
+                        <li id="#"><a href="pri.html">Warren Buffet</a></li>    
+                     </ul></li>
+                <li id="srp"><a href="Services.html">Debit card</a></li>
+                <li id="asp"><a href="S.html"> Paypal</a></li>
+                <li id="pri"><a href="pri.html">Wallet</a></li>    
+             </ul>
+     </ul>
+    </nav>
+<br>
+
+    <h3>Online book Store Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas saepe fugit quam omnis obcaecati. Delectus officiis veritatis fuga nihil repudiandae.
+
+    </h3>
+
+    <form>
+        <input type="text" placeholder="Search your book" required >
+        <br>
+        <button>Search</button>
+    </form>
+   
+
+    
+  
+
+</body>
+</html>
